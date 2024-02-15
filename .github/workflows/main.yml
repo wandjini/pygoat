@@ -41,7 +41,7 @@ jobs:
         docker_version: '20.10.7'
     
     - name: Build The Image 
-      run: docker build - Dockerfile -t myapp:latest .
+      run: docker build -f Dockerfile -t myapp:latest .
 
     - name: Scan the Docker Image
       run: |
